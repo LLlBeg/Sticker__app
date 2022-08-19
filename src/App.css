@@ -1,38 +1,79 @@
-.App {
+.header {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  color: #e0e1ce;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.add__button {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: large;
+}
+
+.add__button {
+  color: #e80056;
+  cursor: pointer;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sticker__board {
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 90%;
 }
 
-.App-link {
-  color: #61dafb;
+.sticker__item {
+  background: url("./assets/image/Sticker.png");
+  width: 250px;
+  height: 220px;
+  padding: 15px;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sticker__area {
+  width: 80%;
+  height: 100px;
+  padding: 12px 20px;
+  border: 1px solid rgb(255, 255, 0);
+  border-radius: 4px;
+  background-color: yellow;
+  font-size: 16px;
+  resize: none;
+}
+
+.sticker__button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.sticker__button-delet {
+  color: green;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+.sticker__button-delet:hover {
+  color: red;
 }
